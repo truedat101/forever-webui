@@ -1,9 +1,11 @@
-# Forever Web UI beta
+# Forever Web UI
 
 ---------------------------------
 ---------------------------------
-### The project **is _not_ maintained anymore**, I'd strongly advise using **Supervisord/Monit** instead of Forever/Monit.
-### For more informations check out [NodeJS process management at Brin.gr](http://blog.fgribreau.com/2012/03/process-management-at-bringr.html)
+### A nice little "no-frills" webui for Forever.
+### Disclaimer: It may not work right all the time.  If it does not, file a bug.  If you have time provide a pull request.  I happily pull if the pull request is legit.
+#### Author FGRibreau says "I'd strongly advise using **Supervisord/Monit** instead of Forever/Monit"
+#### For more informations check out [NodeJS process management at Brin.gr](http://blog.fgribreau.com/2012/03/process-management-at-bringr.html)
 ---------------------------------
 ---------------------------------
 
