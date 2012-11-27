@@ -14,7 +14,10 @@
         "ejs": "0.8.2",
         "ansiparse": "0.0.5-1"
     },
-    "repository": "",
+    "repository": {
+		"type": "git",
+		"url": "git://github.com/truedat101/forever-webui.git"
+	},
     "author" : "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
     "main" : "index",
     "engines": { "node": ">= 0.8.2" }

@@ -14,8 +14,8 @@ App.AppView = Backbone.View.extend({
       // Will trigger the "all" event
       this.Processes.reset(processData);
 
-      this.$('#app-version').text(App.version);
-      document.title += App.version;
+      // this.$('#app-version').text(App.version);
+      // document.title += App.version;
     },
 
     addOne: function(process){
