@@ -1,19 +1,18 @@
 (function() {
-  var HEADER, UI, ansiparse, app, async, ejs, express, forever, foreverUI, fs, _;
+  var express = require('express');
+  var async = require('async');
+  var fs = require('fs');
+  var forever = require('forever');
+  var _ = require('underscore');
+  var ansiparse = require('ansiparse');
+  var ejs = require('ejs');
+  var pkgjson = require('./package.json');
 
-  express = require('express');
-
-  async = require('async');
-
-  fs = require('fs');
-
-  forever = require('forever');
-
-  _ = require('underscore');
-
-  ansiparse = require('ansiparse');
-
-  ejs = require('ejs');
+  var HEADER;
+  var UI;
+  var foreverUI;
+  var app;
+  var pkgversion = pkgjson.version;
 
   process.on("uncaughtException", function(err) {
     return console.log("Caught exception: " + err);
@@ -130,6 +129,7 @@
     return forever.list("", function(err, results) {
       return res.render('index.ejs', {
         process: results
+		,pkgversion: pkgversion
       });
     });
   });
